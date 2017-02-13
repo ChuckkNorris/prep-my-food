@@ -1,0 +1,19 @@
+<md-sidenav-layout>
+   <md-sidenav #sidenav mode="side" class="app-sidenav">
+    Sidenav
+  </md-sidenav>
+<md-toolbar color="primary">
+  <button class="app-icon-button" (click)="sidenav.toggle()">
+      <i class="material-icons app-toolbar-menu">menu</i>
+    </button>
+
+    <span>Application Title</span>
+
+  <!-- This fills the remaining space of the current row -->
+  <span class="app-toolbar-filler"></span>
+
+  <span>Right Aligned Text</span>
+</md-toolbar>
+
+<app-edit-profile></app-edit-profile>
+</md-sidenav-layout>

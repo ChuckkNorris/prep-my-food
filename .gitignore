@@ -1,0 +1,40 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/prep-my-food-client/dist
+/prep-my-food-client/tmp
+
+# dependencies
+/prep-my-food-client/node_modules
+
+# IDEs and editors
+/prep-my-food-client/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# misc
+/prep-my-food-client/.sass-cache
+/prep-my-food-client/connect.lock
+/prep-my-food-client/coverage/*
+/prep-my-food-client/libpeerconnection.log
+npm-debug.log
+testem.log
+/prep-my-food-client/typings
+
+# e2e
+/prep-my-food-client/e2e/*.js
+/prep-my-food-client/e2e/*.map
+
+#System Files
+.DS_Store
+Thumbs.db
