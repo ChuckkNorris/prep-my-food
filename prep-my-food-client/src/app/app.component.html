@@ -1,19 +1,21 @@
-<md-sidenav-layout>
-   <md-sidenav #sidenav mode="side" class="app-sidenav">
-    Sidenav
-  </md-sidenav>
-<md-toolbar color="primary">
-  <button class="app-icon-button" (click)="sidenav.toggle()">
-      <i class="material-icons app-toolbar-menu">menu</i>
-    </button>
+<bootstrap-grid>
+  <md-sidenav-layout>
+    <md-sidenav #sidenav mode="side" class="app-sidenav">
+      Sidenav
+    </md-sidenav>
+  <md-toolbar color="primary">
+    <button class="app-icon-button" (click)="sidenav.toggle()">
+        <i class="material-icons app-toolbar-menu">menu</i>
+      </button>
+      <span>Prep My Meals</span>
+    <!-- This fills the remaining space of the current row -->
+    <span class="app-toolbar-filler"></span>
 
-    <span>Application Title</span>
+    <!--<span>Right Aligned Text</span>-->
+  </md-toolbar>
 
-  <!-- This fills the remaining space of the current row -->
-  <span class="app-toolbar-filler"></span>
+  <app-edit-profile></app-edit-profile>
+  <app-meal-options></app-meal-options>
 
-  <span>Right Aligned Text</span>
-</md-toolbar>
-
-<app-edit-profile></app-edit-profile>
-</md-sidenav-layout>
+  </md-sidenav-layout>
+</bootstrap-grid>
