@@ -1,20 +1,59 @@
 <md-card>
-<md-tab-group color="primary">
-  
-   <md-tab color="primary" label="Personal Info">
-     <div style="margin: 10px;">
-          <md-select color="primary" placeholder="Options">
-      <md-option color="primary">Hello</md-option>
-    </md-select>
-      <button md-raised-button color="primary">PRIMARY RAISED</button>
-     </div>
-  
-  </md-tab>
-   <md-tab label="Food Preferences">
-    Test
-  </md-tab>
-</md-tab-group>
+  <md-tab-group color="primary">
+    <md-tab color="primary" label="Personal Info">
+      <row>
+        <column sm="12" center>
+          <md-input-container>
+            <input md-input #nickname placeholder="First Name">
+            <md-hint align="end">
+              {{nickname.characterCount}} / 50
+            </md-hint>
+          </md-input-container>
+          <md-input-container>
+            
+            <input md-input placeholder="Last Name">
+          </md-input-container>
+        </column>
+        <column sm="4">
+           <md-input-container>
+             <span md-prefix style="margin-right: 2px;">
+              <i class="material-icons app-input-icon">phone</i>
+            </span>
+            <input type="tel" md-input placeholder="Phone Number">
+          </md-input-container>
+        </column>
+      </row>
+    
+      
+    
+    
+    </md-tab>
+    <md-tab label="Food Preferences">
+      <row>
+        <column sm="6" center>
+          <h3>Carbohydrates</h3>
+          <md-checkbox [checked]="true">Red Potatoes</md-checkbox>
+          <md-checkbox [checked]="true">Sweet Potatoes</md-checkbox>
+          <md-checkbox [checked]="true">Rice</md-checkbox>
+          <md-checkbox [checked]="true">Pasta</md-checkbox>
+        </column>
+        <column sm="6" center>
+          <h3>Proteins</h3>
+          <md-checkbox [checked]="true">Chicken</md-checkbox>
+          <md-checkbox [checked]="true">Beef</md-checkbox>
+          <md-checkbox [checked]="true">Fish</md-checkbox>
+          <md-checkbox [checked]="true">Pork</md-checkbox>
+        </column>
+      </row>
+    <row>
+      <column xs="12" center>
+        <button md-raised-button color="primary">Update Preferences</button>
+      </column>
+    </row>
+    </md-tab>
+  </md-tab-group>
 </md-card>
+
 <md-card>
   <md-checkbox>Unchecked</md-checkbox>
   <md-checkbox [checked]="true">Checked</md-checkbox>
@@ -22,3 +61,7 @@
   <md-checkbox [disabled]="true">Disabled</md-checkbox>
 </md-card>
 
+  <!--<md-select color="primary" placeholder="Options">
+    <md-option>Hello</md-option>
+    <md-option color="primary">Hello</md-option>
+  </md-select>-->

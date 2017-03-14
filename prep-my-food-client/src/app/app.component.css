@@ -20,12 +20,25 @@ md-sidenav-layout {
 }
 
 :host /deep/ md-card {
-    background: dimgray;
+    /*background: dimgray;*/
     margin: 20px;
 }
 
-:host /deep/ md-tab {
-    padding: 10px;
+
+:host /deep/ md-tab-header {
+    margin-bottom: 20px;
+}
+
+:host /deep/ column {
+    margin-bottom: 20px;
+}
+
+:host /deep/ md-checkbox {
+    display: table;
+}
+
+:host /deep/ md-input-container {
+    margin-right: 15px;
 }
 
 .app-toolbar-filler {
