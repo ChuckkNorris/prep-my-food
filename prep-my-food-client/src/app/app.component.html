@@ -10,12 +10,13 @@
       <span>Prep My Meals</span>
     <!-- This fills the remaining space of the current row -->
     <span class="app-toolbar-filler"></span>
-
+    <button md-button>Dashboard</button>
+    <button md-button>Login</button>
     <!--<span>Right Aligned Text</span>-->
   </md-toolbar>
 
   <app-edit-profile></app-edit-profile>
-  <app-meal-options></app-meal-options>
+  <app-meal-options [meals]="myMeals"></app-meal-options>
 
   </md-sidenav-layout>
 </bootstrap-grid>

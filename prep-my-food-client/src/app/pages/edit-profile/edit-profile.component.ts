@@ -1,3 +1,4 @@
+import { Preferences } from './../../test-data';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./edit-profile.component.css']
 })
 export class EditProfileComponent implements OnInit {
-
+  preferences:any[] = Preferences;
   constructor() { }
 
   ngOnInit() {

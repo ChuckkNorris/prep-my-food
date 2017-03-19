@@ -10,13 +10,17 @@ import { EditProfileComponent } from './pages/edit-profile/edit-profile.componen
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { MealOptionsComponent } from './templates/meal-options/meal-options.component';
 import { BootstrapGridModule } from 'ng2-bootstrap-grid';
+import { PreferenceComponent } from './templates/preference/preference.component';
+import { MealCardComponent } from './templates/meal-card/meal-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EditProfileComponent,
     DashboardComponent,
-    MealOptionsComponent
+    MealOptionsComponent,
+    PreferenceComponent,
+    MealCardComponent
   ],
   imports: [
     BrowserModule,

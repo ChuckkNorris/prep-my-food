@@ -1,14 +1,11 @@
 <container>
 <row>
     <column *ngFor="let meal of meals" 
-        xl="2"
-        lg="3"
+        xl="3"
         md="4"
-        sm="4"
+        sm="6"
         xs="12">
-        <md-card>
-            <md-card-title>Test</md-card-title>
-        </md-card>
+       <app-meal-card [meal]="meal"></app-meal-card>
     </column>
 </row>
 </container>

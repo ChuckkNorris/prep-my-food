@@ -1,3 +1,5 @@
+/*@import "prep-my-food.theme.scss";*/
+
 md-sidenav-layout {
     background: lightgray;
 }
@@ -19,10 +21,15 @@ md-sidenav-layout {
   text-decoration: none;
 }
 
+
 :host /deep/ md-card {
-    /*background: dimgray;*/
+    /*background: #e64a19;*/
     margin: 20px;
 }
+
+/*:host /deep/ md-ink-bar {
+    background-color: white;
+}*/
 
 
 :host /deep/ md-tab-header {
@@ -33,9 +40,12 @@ md-sidenav-layout {
     margin-bottom: 20px;
 }
 
-:host /deep/ md-checkbox {
-    display: table;
-}
+/*:host /deep/ md-checkbox {
+    display: block;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}*/
 
 :host /deep/ md-input-container {
     margin-right: 15px;

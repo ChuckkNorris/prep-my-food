@@ -17,8 +17,14 @@ $accent:  md-palette($md-blue-grey, A200, A100, A400);
 // The warn palette is optional (defaults to red).
 $warn:    md-palette($md-red);
 
+
+//  { accent: $accent };
+// div {
+//     background: $accent;
+// }
+
 // Create the theme object (a Sass map containing all of the palettes).
-$theme: md-dark-theme($primary, $accent, $warn);
+$theme: md-light-theme($primary, $accent, $warn);
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
